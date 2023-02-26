@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    .headdiv {
+        width: 100%;
+        height: 155px;
+        background-color: rgba(236, 243, 255, 1);
+        font-size: 16px;
+        font-weight: 50;
+        resize: both;
+;
+    }
+    #email {
+        position: absolute;
+        width: 164px;
+        height: 22px;
+        left: 91px;
+        top: 14px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #454A6D;
+    }
+    #number{
+        position: absolute;
+        width: 91px;
+        height: 22px;
+        left: 313px;
+        top: 14px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #454A6D;
+    }
+    #follow{
+        position: absolute;
+        width: 97px;
+        height: 22px;
+        left: 1009px;
+        top: 14px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;  
+
+        color: #454A6D;
+    }
+    #insta{
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        left: 1123px;
+        top: 15px;
+
+    }
+    #youtube{
+        position: absolute;
+        width: 27.7px;
+        height: 19.39px;
+        left: 1154.73px;
+        top: 14.75px;
+    }
+    #facebook{
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        left: 1196px;
+        top: 15px;
+    }
+    #linkedin{
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        left: 1228px;
+        top: 15px;
+
+    }
+
+    #contactus{
+        position: absolute;
+        width: 84px;
+        height: 22px;
+        left: 1292px;
+        top: 14px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        
+        color: #454A6D;
+    }
+    #logo{
+        position: absolute;
+        width: 173px;
+        height: 48.79px;
+        left: 61px;
+        top: 77px;
+
+        font-family: 'Recoleta';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34.7234px;
+        line-height: 47px;
+        /* identical to box height */
+
+
+        color: #005DF2;
+    }
+    #Training{
+        position: absolute;
+        width: 70px;
+        height: 25px;
+        left: 626px;
+        top: 90px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: #454A6D;
+        background-color: inherit;
+        border: 0px;
+    }
+    .dropbtn{
+        color: #454A6D;
+        background-color: inherit;
+        border: 0px;
+    }
+    #Consulting{
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 719px;
+        top: 90px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #454A6D;
+
+    }
+    #Solutions{
+        position: absolute;
+        width: 83px;
+        height: 25px;
+        left: 837px;
+        top: 90px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #454A6D;
+
+    }
+    #Webstore{
+        position: absolute;
+        width: 84px;
+        height: 25px;
+        left: 935px;
+        top: 90px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #454A6D;
+
+    }
+    #Resources{
+        position: absolute;
+        width: 92px;
+        height: 25px;
+        left: 1042px;
+        top: 90px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #454A6D;
+
+    }
+    #Aboutus{
+        position: absolute;
+        width: 77px;
+        height: 25px;
+        left: 1157px;
+        top: 90px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #454A6D;
+    }
+
+    #rectangle1{
+        position: absolute;
+        width: 100%;
+        height: 928px;
+        left: 0px;
+        top: 155px;
+        background-image: url("../images/Rectangle1.png");
+
+        /*background: linear-gradient(180deg, #E9F1FF 0%, #F9FBFF 100%);*/
+    }
+
+    #manimage{
+        position: absolute;
+        width: 445px;
+        height: 822px;
+        left: 880px;
+        top: 0px;
+    }
+    #vector{
+        position: absolute;
+        width: 510px;
+        height: 145.84px;
+        left: 115px;
+        top: 519.99px;
+        background-image: url(".//images/Group 1244.png");
+    }
+
+    #ready{
+        position: absolute;
+        width: 258.66px;
+        height: 20.33px;
+        /* left: 145.91px;
+        top: 705.9px; */
+        left: 30.91px;
+        top: 30.91px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.6411px;
+        line-height: 20px;
+
+        color: #000000;
+    }
+    #why{
+        position: absolute;
+        width: 213.92px;
+        height: 20.33px;
+        left: 30.91px;
+        top: 74.83px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.6411px;
+        line-height: 20px;
+
+        color: #000000;
+    }
+
+    .viewarticlebutton{
+        border: 0px;
+        position: absolute;
+        width: 122.01px;
+        height: 32.54px;
+        
+
+        background: #D2E3FF;
+        border-radius: 16.2679px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.6411px;
+        line-height: 20px;
+        color: #005DF2;
+    }
+    #viewarticlebutton1{
+        left: 361.96px;
+        top: 26.03px;
+    }
+    #viewarticlebutton2{
+        left: 361.96px;
+        top: 75.65px;
+    }
+
+    #Searchbutton{
+        position: absolute;
+        width: 243px;
+        height: 58px;
+        left: 246px;
+        top: 72px;
+        background-color: inherit;
+        border: 1px solid #454A6D;
+        border-radius: 5px;
+    }
+    #searchimg{
+        position: absolute;
+        left: 26px;
+        right: 79.76%;
+        top: 19px;
+        bottom: 97.79%;
+
+    }
+    #searchtext{
+        position: absolute;
+        width: 59px;
+        height: 25px;
+        left: 67px;
+        top: 18px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #454A6D;
+    }
+
+    .improve{
+        position: absolute;
+        width: 650px;
+        height: 166px;
+        left: 115px;
+        top: 36px;
+
+        font-family: 'DM Serif Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 110%;
+        /* or 53px */
+
+
+        color: #005DF2;
+    }
+    #businessperformance{
+        color: rgba(234,146,18,1);
+
+    }
+    .note{
+        position: absolute;
+        width: 476px;
+        height: 54px;
+        left: 119px;
+        top: 241px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #005DF2;
+    }
+    #viewcources{
+        position: absolute;
+        width: 218px;
+        height: 58px;
+        left: 115px;
+        top: 494px;
+
+        background: #EA9212;
+        border-radius: 5px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+
+
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  position: absolute;
+    width: 280.51px;
+    height: 214.05px;
+    left: 115px;
+    top: 1899px;
+
+    background: url(.jpg);
+    border-radius: 8.63098px 8.63098px 0px 0px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    position: absolute;
+    width: 236.49px;
+    height: 69.91px;
+    left: 17.26px;
+    top: 232px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+
+#readmore{
+    position: absolute;
+width: 247.71px;
+height: 50.06px;
+left: 0px;
+top: 90px;
+color: white;
+background: #005DF2;
+border-radius: 5px;
+    
+}
+
+#our{
+    position: absolute;
+    width: 1318px;
+    height: 699px;
+    left: 61px;
+    top: 921px;
+
+    background: inherit;
+    box-shadow: 0px 10px 56px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+#ourtext{
+    z-index: 1000;
+    width: 168px;
+    height: 33px;
+    left: 573px;
+    top: 1000px;
+
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 110%;
+/* identical to box height, or 33px */
+
+
+color: #1F1F1F;
+}
+
+
+</style>
+<body>
+    <div id="our">
+        ourservices
+        
+    <span id="ourtext">jdsnajn</span>
+    </div>
+    
+
+    
+    <img src="../images/Group 1245.png" id="logo" alt="">
+    
+    <div class="headdiv" id="headdiv">
+        <div class="headdiv" id="emaildiv">
+        <span id="email">demo@gssgroup.com</span>
+        <span id="number">7894561236</span>
+        <span id="follow">Follow us on:</span>
+        <a href="#"><img src="../images/Insta icon.png" alt="" id="insta"></a>
+        <a href="#"><img src="../images/youtube icon.png" alt="" id="youtube"></a>
+        <a href="#"><img src="../images/Facebook icon.png" alt="" id="facebook"></a>
+        <a href="#"><img src="../images/linkedin icon.png" alt="" id="linkedin"></a>
+        <span id="contactus">Contact Us</span>
+
+
+        
+          
+        <button class="dropbtn" id="Training">Training</button>
+        
+        
+        <button class="dropbtn" id="Consulting">Consulting</button>>
+        <button class="dropbtn" id="Solutions">Solutions</button>
+        <button class="dropbtn" id="Webstore">Webstore</button>
+        <button class="dropbtn" id="Resources">Resources</button>
+        <span id="Aboutus">About us</span>
+        
+        
+
+        <button id="Searchbutton" >
+            <img src="../images/Search.png" id="searchimg" alt="">
+            <span id="searchtext">Search</span>
+        </button>
+        
+    </div>
+    </div>
+
+    
+
+    <div class="rectangle1" id="rectangle1">
+        <img src="../images/Group 1243.png" id="manimage" alt="">
+        <p class="improve"><span id="improveyour">
+            Improve your</span><span id="businessperformance"> business performance</span><span id="improveyour"> by empowering your people.</span>
+        </p>
+        <p class="note">
+            Get curated courses and dedicated consultation for your employees at one place.
+        </p>
+        <div class="text" id="vector"> 
+            <div id="ready">
+                <span>Are you ready for VUCA Environment?</span>
+            </div>
+            
+            <div id="why"><span>Why IT Capability Assessment?</span></div>
+
+            <button class="viewarticlebutton" id="viewarticlebutton1"> View Article</button>
+            <button class="viewarticlebutton" id="viewarticlebutton2"> View Article</button>
+            
+            
+        </div>
+    </div>
+    <button id="viewcources"> View Cources</button>
+
+    
+    
+    <div class="card">
+        <img src="../images/Rectangle 36.png" alt="Avatar" style="width:100%">
+        <span class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.
+             
+            <button id="readmore">Read more</button>
+        </span>
+        
+      </div>
+      
+
+    
+    
+</body>
+</html>
